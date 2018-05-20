@@ -10,7 +10,87 @@ Decentralized Network Creation and Management (SideChains and dappChains) Within
 Neutron is currently under development in the `development` branch. 
 
 ## What Purpose Will Neutron Serve?
-Neutron's sole job on the Bench Network to assist in the creation of decentralized networks, also known as blockchains which end up being `SideChains` and `dappChains` (SideChains used by dApps) and also assists benOS and benOS-based applications in retreiving from, connecting to and utilizing all the networks under its management. Neutron works directly with [Keystone](https://github.com/benchlab/keystone) when it comes to giving new networks unique identifiers, known as `GalaxyKeys`. [Keystone](https://github.com/benchlab/keystone) is also integrated with each SideChain and dAppChain to assist in unique identifiers for users, their wallets, transactions and more. Neutron is one of the most important pieces to the Bench Network design. 
+Neutron's sole job on the Bench Network to assist in the creation of decentralized networks, also known as blockchains which end up being `SideChains` and `dappChains` (SideChains used by dApps) and also assists benOS and benOS-based applications in retreiving from, connecting to and utilizing all the networks under its management. Neutron works directly with [Kepler](https://github.com/benchlab/kepler) when it comes to giving new networks unique identifiers, known as `GalaxyNames`. [Kepler](https://github.com/benchlab/kepler) is also integrated with each SideChain and dAppChain to assist in unique identifiers for users, their wallets, transactions and more. Neutron is one of the most important pieces to the Bench Network design. 
+
+## What Decentralized Networks Are Created With Neutron?
+There are many decentralized networks, both `SideChains` and `dappChains` that were created for dApps and other reasons, related to the launch of [benOS](https://github.com/benchlab/benos). These networks were created to give dApps their own decentralized networks, so that the dApps related to them didn't bog down the root-level of the Bench Network. Below are some decentralized networks being built with Neutron.
+
+[BenchChain](https://github.com/benchlab/benchchain) - `RootChain` (root-level network) for the Bench Network. <br>
+[MusicChain](https://github.com/benchlab/musicchain) - `dAppChain` (sub network) within the Bench Network, used for BenchMusic dApp.<br>
+[ShareChain](https://github.com/benchlab/sharechain) - `dAppChain` (sub network) within the Bench Network, used for BenchShare dApp.<br>
+[TubeChain](https://github.com/benchlab/tubechain) - `dAppChain` (sub network) within the Bench Network, used for BenchTube dApp.<br>
+[ReadChain](https://github.com/benchlab/readchain) - `dAppChain` (sub network) within the Bench Network, used for BenchRead dApp.<br>
+[DocChain](https://github.com/benchlab/docchain) - `dAppChain` (sub network) within the Bench Network, used for BenchDocs dApp.<br>
+[QuintChain](https://github.com/benchlab/quintchain) - `SideChain` (sub network) within the Bench Network, used for the Quint network.<br>
+[MailChain](https://github.com/benchlab/mailchain) - `dAppChain` (sub network) within the Bench Network, used for BenchMail dApp.<br>
+[MemoChain](https://github.com/benchlab/memochain) - `dAppChain` (sub network) within the Bench Network, used for BenchMemo dApp.<br>
+[ShopChain](https://github.com/benchlab/shopchain) - `dAppChain` (sub network) within the Bench Network, used for BenchShop dApp.<br>
+
+
+## Is Neutron A Blockchain?
+No, Neutron is not a blockchain or a multichain. Neutron creates, manages and connects blockchains across the Bench Network and blockchains outside the Bench Network. The blockchains aka decentralized networks that Neutron creates are compliant with the [BenchCore](https://github.com/benchlab/benchcore) consensus logic (DPOS), design and specification. To create a new Neutron-based decentralized network, we have created `Neutron-CLI`. You can read more about how Neutron-CLI works below.
+
+## Neutron-CLI
+Neutron also comes with a command-line client called [Neutron-CLI](https://github.com/benchlab/neutron-cli). Neutron-CLI is used to create new networks (SideChains and dappChains) on Bench Network and to retreive information about networks. A very useful tool when it comes to launching a new decentralized network that you would like to run on the Bench Network. 
+
+### Generating A New Network With Neutron-CLI
+
+```ssh
+# neutron-cli new network --dapp --gkey "musicchain"
+New neutron network was created and is stored in ~/.neutron/networks/musicchain_dawn.json
+# cat ~/.neutron/networks/musicchain_dawn.json
+{
+  "dawn_time": "2018-05-20T07:11:22.526Z",
+  "galaxy_name": "musicchain",
+  "network_uuid": "e0a519f2-e0d0-43e1-9d32-b3940222db11",
+  "astronauts": [
+    {
+      "uni_key": [
+        1,
+        "GASNQVDCZEXEJ2H2HT4ODFG2RTYRCRKBWFXCUJVEGYFDSAVKF3SRVBKZ"
+      ],
+      "fuel": 1,
+      "aname": "michaelx"
+    },
+    {
+      "uni_key": [
+        1,
+        "GCYP7DYFOBHW64J7WYEVHNNQ5TWKQB55T6TUJHSU2PUN7YUCYBYYTTEY"
+      ],
+      "fuel": 1,
+      "aname": "stan"
+    },
+    {
+      "uni_key": [
+        1,
+        "GBEZO4UKWYRQ6UKLBN6XJRDRC6SB7YRZ22SUHTIJNBFJWIYHUP6OTVTG"
+      ],
+      "fuel": 1,
+      "aname": "jared"
+    },
+    {
+      "uni_key": [
+        1,
+        "GDSWQAKTEE6JX4QCRCQZVQ7YMVELOZSG7OQT2LBASE53IB4MFFGDA5NQ"
+      ],
+      "fuel": 1,
+      "aname": "nomoreheroes"
+    },
+    {
+      "uni_key": [
+        1,
+        "GCGLXOLNMD767AHRQ2EVD2LKWYQNETLTPLZKAXM3PZFNCMVPZKXVEAAP"
+      ],
+      "fuel": 1,
+      "aname": "nickeles"
+    }
+  ],
+  "dapp_uuid": "4e5b41aa-ba8e-4845-bbdf-3c5cd93aa5af",
+  "dapp_state": {
+    {"designate_account": "muzbot", "muzcoin": 1000000000}
+  }
+}
+```
 
 # What Is benOS
 [benOS](https://github.com/benchlab/benos) is a decentralized operating system, originally based on Linux, uses some design strategies from [RedoxOS](https://github.com/redox-os) and even some design concepts from [OpenStack](https://github.com/openstack), [Ethereum](https://github.com/ethereum/go-ethereum) and [EOS](https://github.com/eosio). Although we utilize some of their design strategies, benOS is completely custom from a codebase perspective. 
