@@ -13,14 +13,14 @@ Neutron is currently under development in the `development` branch.
 Neutron's sole job on the Bench Network to assist in the creation of decentralized networks, also known as blockchains which end up being `SideChains` and `dappChains` (SideChains used by dApps) and also assists benOS and benOS-based applications in retreiving from, connecting to and utilizing all the networks under its management. Neutron works directly with [Keystone](https://github.com/benchlab/keystone) when it comes to giving new networks unique identifiers, known as `GalaxyKeys`. [Keystone](https://github.com/benchlab/keystone) is also integrated with each SideChain and dAppChain to assist in unique identifiers for users, their wallets, transactions and more. Neutron is one of the most important pieces to the Bench Network design. 
 
 ## CREDITS AND ATTRIBUTES
-benOS may use software from other open source libraries. For a full list of software credits and acknowledgements, please visit [https://github.com/benchlab/benOS/blob/master/ATTRIBUTES.md](https://github.com/benchlab/benOS/blob/master/ATTRIBUTES.md). The original LICENSE or LICENSES for the originating software(s) and library or libraries that were used to create `Kepler` are still active, although, considering this Bench software and the softwares and/or libraries/packages it is `imported` into may be used to issue illegal securities, the BENCH LICENSE is activated for this purpose. This does not take away the credits, disable the originating LICENSE or in any way disown the original creation, creators, developers or organizations that originally developed many of the libaries used throughout Bench's large array of software libraries packaged together for the purposes of building a decentralized operating system (benOS)
+benOS may use software from other open source libraries. For a full list of software credits and acknowledgements, please visit [https://github.com/benchlab/benOS/blob/master/ATTRIBUTES.md](https://github.com/benchlab/benOS/blob/master/ATTRIBUTES.md). The original LICENSE or LICENSES for the originating software(s) and library or libraries that were used to create `Neutron` are still active, although, considering this Bench software and the softwares and/or libraries/packages it is `imported` into may be used to issue illegal securities, the BENCH LICENSE is activated for this purpose. This does not take away the credits, disable the originating LICENSE or in any way disown the original creation, creators, developers or organizations that originally developed many of the libaries used throughout Bench's large array of software libraries packaged together for the purposes of building a decentralized operating system (benOS)
 
 ## VERSION
 1.0.0
 
 ## LICENSE
 BENCH LICENSE<br>
-For Kepler
+For Neutron
 <br><br>
 Copyright (c) 2018 Bench Computer, Inc. <legal@benchx.io>
 <br><br>
