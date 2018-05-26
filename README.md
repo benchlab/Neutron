@@ -2,6 +2,11 @@
   <img src="https://github.com/benchlab/benchx-media/raw/master/benos-logo.png" width="300px" alt="benOS Logo"/>
 </p> <br>
 
+[![](https://img.shields.io/badge/made%20with%20love%20by-BenchLabs-purple.svg?style=flat-square)](https://labs.benchx.io)
+[![](https://img.shields.io/badge/benOS%20Library%20KeplerUUID-yellow.svg?style=flat-square)](https://kepler.benchx.io)
+[![](https://img.shields.io/badge/benOS-Version-v.1.0.7-blue.svg?style=flat-square)](https://os.benchx.io/mercury/v/1-0-7)
+
+
 # Neutron
 Decentralized Network Creation and Management (SideChains and dappChains) Within The Bench Network.
 
@@ -91,6 +96,10 @@ New neutron network was created and is stored in ~/.neutron/networks/musicchain_
   }
 }
 ```
+
+# How To Launch a Neutron-based Network?
+Neutron uses a software called [BenchCore](https://github.com/benchlab/benchcore), the blockchain engine utilized by Neutron, it also powers Neutron as well. Neutron simply manages the networks within the Bench ecosystem, identifies those networks through Kepler and provides tools for creating the BenchCore-powered networks that eventually end up under its management.
+
 
 # What Is benOS
 [benOS](https://github.com/benchlab/benos) is a decentralized operating system, originally based on Linux, uses some design strategies from [RedoxOS](https://github.com/redox-os) and even some design concepts from [OpenStack](https://github.com/openstack), [Ethereum](https://github.com/ethereum/go-ethereum) and [EOS](https://github.com/eosio). Although we utilize some of their design strategies, benOS is completely custom from a codebase perspective. 
